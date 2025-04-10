@@ -1,0 +1,250 @@
+:root {
+  --villanova-blue: rgb(0, 38, 100);
+  --font-primary: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: white;
+  color: #333;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+/* ============================= */
+/*        NAVIGATION BAR        */
+/* ============================= */
+
+header {
+  background-color: var(--villanova-blue);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--villanova-blue);
+  padding: 1rem 1.5rem;
+  color: white;
+  position: relative;
+}
+
+.nav-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ============================= */
+/*        MAIN CONTENT          */
+/* ============================= */
+
+main {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  text-align: center;
+  width: 100%;
+}
+
+.quote-block {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-content {
+  background-color: #f2f2f2; /* light gray background */
+  max-width: 700px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #111;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* light shadow for subtle depth */
+}
+
+.quote-content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.quote-marks {
+  font-size: 3rem;
+  color: rgb(0, 38, 100); /* Villanova Blue */
+  font-weight: bold;
+}
+
+.top-mark {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.bottom-mark {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.quote-author {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: rgb(0, 38, 100);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.headshot img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info-logo {
+  object-fit: contain;
+  max-height: 80px;
+  max-width: 260px;
+}
+
+.vu-logo {
+  max-height: 150px;
+  max-width: 250px;
+}
+
+.cmu-logo {
+  max-height: 65px;
+  max-width: 300px;
+}
+
+.name-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin-top: 1rem;
+  flex-basis: 100%;
+}
+
+.strengths {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-top: 0.5rem;
+  flex-basis: 100%;
+}
+
+.strengths span {
+  margin: 0 0.6rem;
+  color: #aaa;
+}
+  
+.strengths {
+  color: rgb(0, 38, 100);
+}
+
+.strengths span {
+  color: #555;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  padding: 0 1rem;
+  text-align: justify; /* Add this line */
+}
+
+/* ============================= */
+/*         RESPONSIVE           */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--villanova-blue);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .description {
+    padding: 0 1.5rem;
+  }
+
+  .vu-logo {
+    margin-bottom: -2.3rem;
+  }
+  
+  .strengths {
+    display: none;
+  }
+}
