@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashwat Maharjan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="nav-brand">Home</div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="conferences.html">Conferences</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+    <main>
+      <div class="content-wrapper">
+        
+        <div class="quote-block">
+            <div class="quote-content">
+              <div class="quote-marks top-mark">“</div>
+              <p>
+                If you aren't scared, you aren't taking a chance.
+              </p>
+              <div class="quote-marks bottom-mark">”</div>
+              <div class="quote-author">— Ted Mosby</div>
+            </div>
+        </div>
+
+        <div class="top-section">
+          <img src="images/vu_logo.jpg" alt="Villanova University Logo" class="info-logo vu-logo" />
+  
+          <div class="headshot">
+            <img src="images/headshot.jpg" alt="Headshot" />
+          </div>
+  
+          <img src="images/cmu_logo.png" alt="Central Michigan University Logo" class="info-logo cmu-logo" />
+        </div>
+        
+        <div class="name-heading">Shashwat Maharjan</div>
+            <div class="strengths">
+            Learner <span>|</span> Input <span>|</span> Intellection <span>|</span> Responsibility <span>|</span> Strategic
+        </div>
+  
+        <div class="description">
+          <p>
+            Shashwat Maharjan is a PhD student in Mechanical Engineering at Villanova University, specializing in bioinspired material science and physics-informed machine learning. His research spans the development of bio-inspired dental adhesives, machine learning models for predicting stress fractures in athletes and military personnel, and the design of resilient composite structures inspired by ant cuticle architecture. With a strong foundation in finite element modeling and computational mechanics, he is focused on building intelligent tools that bridge physics, biology, and engineering for advanced material design.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+        function toggleMenu() {
+          const menu = document.getElementById('nav-links');
+          menu.classList.toggle('show');
+        }
+      </script>
+</body>
+
+</html>
