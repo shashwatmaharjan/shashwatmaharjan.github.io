@@ -13,6 +13,14 @@
 </head>
 
 <body>
+    <script>
+      if (window.innerWidth <= 768) {
+        document.body.innerHTML = "Redirecting to mobile-friendly CV view...";
+        setTimeout(() => {
+          window.location.href = "../files/cv.pdf";
+        }, 500);
+      }
+    </script>
   <header>
     <nav class="navbar">
       <div class="nav-brand">CV</div>
