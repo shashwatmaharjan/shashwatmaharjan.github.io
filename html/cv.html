@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Shashwat Maharjan</title>
+
+  <!-- Global styling -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <!-- CV-specific layout -->
+  <link rel="stylesheet" href="../css/cv.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">CV</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="conferences.html">Conferences</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cv-container">
+      <h1>Curriculum Vitae</h1>
+      <embed src="../files/cv.pdf" type="application/pdf" class="cv-embed" />
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>
