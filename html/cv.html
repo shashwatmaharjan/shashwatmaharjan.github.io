@@ -14,12 +14,12 @@
 
 <body>
     <script>
-      if (window.innerWidth <= 768) {
-        document.body.innerHTML = "Redirecting to mobile-friendly CV view...";
-        setTimeout(() => {
+        const isMobile = /iPhone|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+        const isTablet = /iPad|Tablet|PlayBook|Kindle|Silk/i.test(navigator.userAgent);
+      
+        if (isMobile || isTablet) {
           window.location.href = "../files/cv.pdf";
-        }, 500);
-      }
+        }
     </script>
   <header>
     <nav class="navbar">
