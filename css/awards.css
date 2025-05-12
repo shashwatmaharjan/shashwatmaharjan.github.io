@@ -46,7 +46,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Description */
+/* Description paragraphs */
 .award-card p {
   margin: 0;
   color: #333;
@@ -54,10 +54,11 @@
   font-size: 1rem;
 }
 
+/* Award list (for grouped awards) */
 .award-list {
-  margin: 0.5rem 0 0 0;
-  padding-left: 1.2rem;
-  list-style-type: disc;
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  list-style: disc outside;
   color: #333;
   font-size: 1rem;
   line-height: 1.6;
@@ -77,7 +78,8 @@
     font-size: 1rem;
   }
 
-  .award-card p {
+  .award-card p,
+  .award-list {
     font-size: 0.95rem;
   }
 }
