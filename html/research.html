@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Shashwat Maharjan</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/research.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Shashwat Maharjan</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="conferences.html">Conferences</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="acknowledgments.html">Acknowledgments</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="research-container">
+      <h1>Current Research</h1>
+
+      <div class="research-block fade-in">
+        <img src="../images/bioinspired_dental.png" alt="Bio-Inspired Dental Materials">
+        <div class="research-text">
+          <h2>Bio-Inspired Dental Materials</h2>
+          <p>Designing functionally graded interfaces between ceramic and polymer layers to reduce interfacial stresses and enhance the durability of dental restorations, inspired by the natural dento-enamel junction.</p>
+        </div>
+      </div>
+
+      <div class="research-block fade-in">
+        <img src="../images/tibia_stress.png" alt="Tibia Stress Fracture Prediction">
+        <div class="research-text">
+          <h2>Stress Fracture Prediction Using Tibia Geometry</h2>
+          <p>Developing a machine learning model trained on finite element simulations of tibial geometries to predict stress concentrations that lead to fractures, with the goal of enabling personalized injury risk assessments for athletes.</p>
+        </div>
+      </div>
+
+      <div class="research-block fade-in">
+        <img src="../images/ant_pad.png" alt="Ant Pad Composite Structure">
+        <div class="research-text">
+          <h2>Ant Pad Composite Structure</h2>
+          <p>Inspired by the fibrous, multi-functional architecture of insect cuticle, this project investigates the microstructure of ant footpads to design lightweight, high-adhesion composite materials. The goal is to mimic their directional stiffness and layered morphology to enhance grip and load distribution in synthetic interfaces.</p>
+        </div>
+      </div>
+
+      <h1>Past Research</h1>
+
+      <div class="research-block fade-in">
+        <img src="../images/void_detection.png" alt="Void Detection in Composite Materials">
+        <div class="research-text">
+          <h2>Void Detection in Composite Materials</h2>
+          <p>Developed machine learning models using elastic wave data to detect and classify voids and delaminations in composite structures. This approach improves nondestructive testing for structural health monitoring.</p>
+        </div>
+      </div>
+
+      <div class="research-block fade-in">
+        <img src="../images/seismic_reconstruction.png" alt="Seismic Wave Reconstruction">
+        <div class="research-text">
+          <h2>Seismic Wave Reconstruction for Structural Health Monitoring</h2>
+          <p>Used deep learning models to estimate incoming seismic wave motions from surface data. This helps improve structural health monitoring by quickly identifying how the ground shakes beneath buildings and infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-links");
+      menu.classList.toggle("show");
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".fade-in").forEach(block => observer.observe(block));
+  </script>
+</body>
+
+</html>
