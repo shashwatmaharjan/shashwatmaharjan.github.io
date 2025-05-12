@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conferences | Shashwat Maharjan</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/conferences.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Conferences</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="conferences.html" class="active">Conferences</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="acknowledgments.html">Acknowledgments</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="conf-container">
+      <h1>Conference Presentations</h1>
+      <ol class="conf-list">
+        <li>
+          <strong>Poster:</strong> Designing Adhesive Interfaces with Superior Bond Strength: A Bioinspired Approach<br>
+          <a href="../files/bioinspired_bond_strength.pdf" target="_blank">Presentation PDF</a>
+        </li>
+        <li>
+          <strong>Presentation:</strong> Convolutional Neural Network for Identifying Effective Seismic Force at a Domain Reduction Method Layer for Rapid Reconstruction of Shear Waves<br>
+          <a href="../files/cnn_seismic_force_drm.pdf" target="_blank">Presentation PDF</a>
+        </li>
+        <li>
+          <strong>Poster:</strong> Smart Bridge: Machine Learning to Identify Structural Defects in a Bridge and a Moving Vibration Source in Real-Time<br>
+          <a href="../files/smart_bridge_defect_detection.pdf" target="_blank">Presentation PDF</a>
+        </li>
+        <li>
+          <strong>Presentation:</strong> Deep and Convolutional Neural Networks for Identifying Vertically-Propagating Incoming Seismic Wave Motion into a Truncated, Heterogeneous, Damped Soil Column<br>
+          <a href="../files/deep_cnn_soil_column.pdf" target="_blank">Presentation PDF</a>
+        </li>
+      </ol>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(document.querySelector('.conf-container'));
+  </script>
+</body>
+
+</html>

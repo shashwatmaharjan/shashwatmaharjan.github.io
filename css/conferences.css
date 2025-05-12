@@ -1,0 +1,67 @@
+.conf-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  font-family: var(--font-primary);
+  color: #333;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.conf-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.conf-container h1 {
+  text-align: center;
+  color: var(--villanova-blue);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.conf-list {
+  counter-reset: conf-num;
+  list-style: none;
+  padding-left: 0;
+}
+
+.conf-list li {
+  counter-increment: conf-num;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.conf-list li::before {
+  content: counter(conf-num) ".";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: var(--villanova-blue);
+}
+
+.conf-list strong {
+  color: var(--villanova-blue);
+}
+
+.conf-list a {
+  color: var(--villanova-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.conf-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .conf-container h1 {
+    font-size: 2rem;
+  }
+
+  .conf-list li {
+    font-size: 1rem;
+  }
+}
