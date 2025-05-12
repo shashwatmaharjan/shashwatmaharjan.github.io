@@ -54,6 +54,19 @@
   font-size: 1rem;
 }
 
+.award-list {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.award-list li {
+  margin-bottom: 0.4rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .award-card {
