@@ -1,0 +1,34 @@
+.simple-contact-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.contact-headshot {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.simple-contact-container h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: var(--villanova-blue);
+}
+
+.simple-contact-container p {
+  margin: 0.5rem 0;
+}
+
+.simple-contact-container a {
+  color: var(--villanova-blue);
+  text-decoration: none;
+}
+
+.simple-contact-container a:hover {
+  text-decoration: underline;
+}

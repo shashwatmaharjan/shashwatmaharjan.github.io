@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Shashwat Maharjan</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Contact</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="conferences.html">Conferences</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="acknowledgments.html">Acknowledgments</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="simple-contact-container">
+      <img src="../images/headshot.jpg" alt="Headshot" class="contact-headshot" />
+      <h1>Shashwat Maharjan</h1>
+      <p><strong>Email:</strong> <a href="mailto:smahar02@villanova.edu">smahar02@villanova.edu</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shashwatmaharjan/" target="_blank">linkedin.com/in/shashwatmaharjan</a></p>
+      <p><strong>Address:</strong> 800 E. Lancaster Ave., Villanova University, Villanova, PA 19085</p>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>
