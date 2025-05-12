@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications | Shashwat Maharjan</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../css/publications.css">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/publications.css" />
 </head>
 
 <body>
@@ -27,43 +27,40 @@
     </nav>
   </header>
 
-
-
   <main>
     <div class="pub-container">
       <h1>Selected Publications</h1>
-      <ul class="pub-list">
+      <ol class="pub-list">
         <li>
-          <em>[Under Review]</em> Kim, B., Maharjan, S., Guidio, B., Thomas, J., Pranto, F. M., Schaal, C., & Jeong, C. (2025).<br>
+          <strong>[Under Review]</strong> Kim, B., Maharjan, S., Guidio, B., Thomas, J., Pranto, F. M., Schaal, C., & Jeong, C. (2025).<br>
           <em>Elastodynamic imaging of void in a PML-truncated semi-infinite solid material using a deep convolutional neural network.</em><br>
-          <strong>Soil Dynamics and Earthquake Engineering</strong>. 
-          <!-- <a href="https://doi.org/10.1016/j.ultras.2024.107254" target="_blank">Journal Paper Link</a> -->
+          <span>Soil Dynamics and Earthquake Engineering</span>
         </li>
         <li>
           Kim, B., Maharjan, S., Pranto, F. M., Guidio, B., Schaal, C., & Jeong, C. (2024).<br>
           <em>Convolutional neural network and level-set spectral element method for ultrasonic imaging of delamination cavities in an anisotropic composite structure.</em><br>
-          <strong>Ultrasonics,</strong> 107254. 
+          <span>Ultrasonics</span> – 
           <a href="https://doi.org/10.1016/j.ultras.2024.107254" target="_blank">Journal Paper Link</a>
         </li>
         <li>
           Maharjan, S., Guidio, B., & Jeong, C. (2024).<br>
           <em>Convolutional neural network for identifying effective seismic force at a DRM layer for rapid reconstruction of SH ground motions.</em><br>
-          <strong>Earthquake Engineering & Structural Dynamics,</strong> 53(2), 894-923. 
+          <span>Earthquake Engineering & Structural Dynamics</span> – 
           <a href="https://doi.org/10.1002/eqe.4049" target="_blank">Journal Paper Link</a>
         </li>
         <li>
           Pranto, F. M., Maharjan, S., & Jeong, C. (2023).<br>
           <em>Level-Set and Learn: Convolutional Neural Network for Classification of Elements to Identify an Arbitrary Number of Voids in a 2D Solid Using Elastic Waves.</em><br>
-          <strong>Journal of Engineering Mechanics,</strong> 149(6), 04023035. 
+          <span>Journal of Engineering Mechanics</span> – 
           <a href="https://doi.org/10.1061/jenmdt.emeng-6840" target="_blank">Journal Paper Link</a>
         </li>
         <li>
           Maharjan, S., Guidio, B., Fathi, A., & Jeong, C. (2022).<br>
           <em>Deep and Convolutional Neural Networks for Identifying Vertically Propagating Incoming Seismic Wave Motion into a Heterogeneous, Damped Soil Column.</em><br>
-          <strong>Soil Dynamics and Earthquake Engineering,</strong> 162, 107510. 
+          <span>Soil Dynamics and Earthquake Engineering</span> – 
           <a href="https://doi.org/10.1016/j.soildyn.2022.107510" target="_blank">Journal Paper Link</a>
         </li>
-      </ul>
+      </ol>
     </div>
   </main>
 
@@ -72,6 +69,17 @@
       const menu = document.getElementById('nav-links');
       menu.classList.toggle('show');
     }
+
+    // Fade-in animation for publications
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(document.querySelector('.pub-container'));
   </script>
 </body>
 

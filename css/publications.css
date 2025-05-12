@@ -3,6 +3,14 @@
   margin: 3rem auto;
   padding: 2rem;
   text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.pub-container.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .pub-container h1 {
@@ -10,17 +18,39 @@
   color: var(--villanova-blue);
   text-align: center;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   list-style: none;
   padding: 0;
 }
 
 .pub-list li {
-  margin-bottom: 2rem;
+  padding: 1.2rem 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 5px solid var(--villanova-blue);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   line-height: 1.6;
   font-size: 1.05rem;
+  color: #333;
+}
+
+.pub-list em {
+  color: var(--villanova-blue);
+  font-style: normal;
+  font-weight: bold;
+}
+
+.pub-list strong {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--villanova-blue);
+  font-weight: bold;
 }
 
 .pub-list a {
