@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awards | Shashwat Maharjan</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/awards.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Awards</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="conferences.html">Conferences</a></li>
+        <li><a href="awards.html" class="active">Awards</a></li>
+        <li><a href="acknowledgments.html">Acknowledgments</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="awards-container">
+      <h1>Honors & Awards</h1>
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-year">2024</div>
+          <p>$110,000 grant by the US Department of Energy for geothermal research internship at Geologica Geothermal Group.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2023</div>
+          <p>Exclusive Google Computer Science Research Mentorship Program.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2022</div>
+          <p>Outstanding Undergraduate Student of the Year by the Engineering Society of Detroit.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2022</div>
+          <p>Most Enthusiastic Presenter at International Mechanical Engineering Congress & Exposition.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2022</div>
+          <p>NSF Student Poster Competition Travel Grant for International Mechanical Engineering Congress & Exposition.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2021</div>
+          <p>Undergraduate President’s Award for research excellence at Central Michigan University.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2021</div>
+          <p>Richtmeyer-Foust Award for outstanding Mathematics senior at Central Michigan University.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2021</div>
+          <p>Best Undergraduate Poster at International Mechanical Engineering Congress & Exposition by the NSF.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2021</div>
+          <p>Undergraduate Summer Scholars for ML research in structural health monitoring.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2019</div>
+          <p>Runner Up, Integration Bee hosted by American Mathematical Society.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2018</div>
+          <p>Winner, Integration Bee hosted by American Mathematical Society.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-year">2018</div>
+          <p>World Prestige Award [Full Ride] to attend Central Michigan University.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
+
+    // Fade-in on scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.award-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+
+</html>
