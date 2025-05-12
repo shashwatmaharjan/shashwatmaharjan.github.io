@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acknowledgments | Shashwat Maharjan</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/acknowledgments.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Acknowledgments</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="conferences.html">Conferences</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="acknowledgments.html" class="active">Acknowledgments</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="ack-container">
+      <h1>Acknowledgments</h1>
+
+        <section class="ack-section">
+        <h2>Academic Advisors & Faculty</h2>
+        <p>
+            My deepest gratitude goes to my academic advisors, professors, and research mentors whose insight and mentorship shaped my intellectual path and helped me grow as a scholar and researcher.
+        </p>
+        <p><strong>Academic Acknowledgments:</strong> Dr. Bruno Guidio, Dr. Boyoung Kim, Dr. Chanseok Jeong, Dr. David Cereceda</p>
+        </section>
+
+        <section class="ack-section">
+        <h2>Counselors & Mentors</h2>
+        <p>
+            I would like to acknowledge the dedicated she-roes from the Nepali Justice League and Second Chance who helped me overcome the grief following the University of Texas Tyler scholarship loss and supported me in securing a fully funded scholarship at Central Michigan University.
+        </p>
+        <p><strong>Nepali Justice League Team:</strong> Diva Shrestha, Emily Dobson, Jamie Kanki, Joan Liu, Kelly Braun, Marie Kobayashi, Samantha Moktan Lama, Selena Malla</p>
+        </section>
+
+        <section class="ack-section">
+        <h2>Family & Parents</h2>
+        <p>
+            I am forever grateful to my parents and extended family for their unwavering support, love, and encouragement throughout my academic and personal journey. Their sacrifices and belief in me are the foundation of my achievements.
+        </p>
+        </section>
+
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
+
+    // Fade-in animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(document.querySelector('.ack-container'));
+  </script>
+</body>
+
+</html>
