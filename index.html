@@ -9,65 +9,77 @@
 </head>
 
 <body>
-    <header>
+  <header>
     <nav class="navbar">
-        <div class="nav-brand"></div>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="html/research.html">Research</a></li>
-            <li><a href="html/publications.html">Publications</a></li>
-            <li><a href="html/conferences.html">Conferences</a></li>
-            <li><a href="html/awards.html">Awards</a></li>
-            <li><a href="html/acknowledgments.html">Acknowledgments</a></li>
-            <li><a href="html/cv.html">CV</a></li>
-            <li><a href="html/contact.html">Contact</a></li>
-        </ul>
+      <div class="nav-brand"></div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="html/research.html">Research</a></li>
+        <li><a href="html/publications.html">Publications</a></li>
+        <li><a href="html/conferences.html">Conferences</a></li>
+        <li><a href="html/awards.html">Awards</a></li>
+        <li><a href="html/acknowledgments.html">Acknowledgments</a></li>
+        <li><a href="html/cv.html">CV</a></li>
+        <li><a href="html/contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
-  
-    <main>
-      <div class="content-wrapper">
-        
-        <div class="quote-block">
-            <div class="quote-content">
-              <div class="quote-marks top-mark">“</div>
-              <p>
-                Our lives begin to end the day we become silent about things that matter.
-              </p>
-              <div class="quote-marks bottom-mark">”</div>
-              <div class="quote-author">— Martin Luther King Jr. </div>
-            </div>
-        </div>
 
-        <div class="top-section">
-          <img src="images/vu_logo.jpg" alt="Villanova University Logo" class="info-logo vu-logo" />
-  
-          <div class="headshot">
-            <img src="images/headshot.jpg" alt="Headshot" />
-          </div>
-  
-          <img src="images/cmu_logo.png" alt="Central Michigan University Logo" class="info-logo cmu-logo" />
-        </div>
-        
-        <div class="name-heading">Shashwat Maharjan</div>
-            <div class="strengths">
-            Developer <span>|</span> Includer <span>|</span> Positivity <span>|</span> Harmony <span>|</span> Analytical
-        </div>
-  
-        <div class="description">
+  <main>
+    <div class="content-wrapper fade-in">
+      
+      <div class="quote-block fade-in">
+        <div class="quote-content">
+          <div class="quote-marks top-mark">“</div>
           <p>
-            Shashwat Maharjan is a PhD student in Mechanical Engineering at Villanova University, specializing in bioinspired material science and physics-informed machine learning. His research spans the development of bio-inspired dental adhesives, machine learning models for predicting stress fractures in athletes and military personnel, and the design of resilient composite structures inspired by ant cuticle architecture. With a strong foundation in finite element modeling and computational mechanics, he is focused on building intelligent tools that bridge physics, biology, and engineering for advanced material design.
+            Our lives begin to end the day we become silent about things that matter.
           </p>
+          <div class="quote-marks bottom-mark">”</div>
+          <div class="quote-author">— Martin Luther King Jr.</div>
         </div>
       </div>
-    </main>
-    <script>
-        function toggleMenu() {
-          const menu = document.getElementById('nav-links');
-          menu.classList.toggle('show');
+
+      <div class="top-section fade-in">
+        <img src="images/vu_logo.jpg" alt="Villanova University Logo" class="info-logo vu-logo" />
+
+        <div class="headshot">
+          <img src="images/headshot.jpg" alt="Headshot" />
+        </div>
+
+        <img src="images/cmu_logo.png" alt="Central Michigan University Logo" class="info-logo cmu-logo" />
+      </div>
+
+      <div class="name-heading fade-in">Shashwat Maharjan</div>
+
+      <div class="strengths fade-in">
+        Developer <span>|</span> Includer <span>|</span> Positivity <span>|</span> Harmony <span>|</span> Analytical
+      </div>
+
+      <div class="description fade-in">
+        <p>
+          Shashwat Maharjan is a PhD student in Mechanical Engineering at Villanova University, specializing in bioinspired material science and physics-informed machine learning. His research spans the development of bio-inspired dental adhesives, machine learning models for predicting stress fractures in athletes and military personnel, and the design of resilient composite structures inspired by ant cuticle architecture. With a strong foundation in finite element modeling and computational mechanics, he is focused on building intelligent tools that bridge physics, biology, and engineering for advanced material design.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
         }
-      </script>
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 
 </html>
