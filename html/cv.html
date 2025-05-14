@@ -13,33 +13,33 @@
 </head>
 
 <body>
-    <script>
-        const isMobile = /iPhone|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent);
-        const isTablet = /iPad|Tablet|PlayBook|Kindle|Silk/i.test(navigator.userAgent);
-      
-        if (isMobile || isTablet) {
-          window.location.href = "../files/cv.pdf";
-        }
-    </script>
+  <script>
+    const isMobile = /iPhone|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+    const isTablet = /iPad|Tablet|PlayBook|Kindle|Silk/i.test(navigator.userAgent);
+    if (isMobile || isTablet) {
+      window.location.href = "../files/cv.pdf";
+    }
+  </script>
+
   <header>
     <nav class="navbar">
       <div class="nav-brand">Shashwat Maharjan</div>
       <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="conferences.html">Conferences</a></li>
         <li><a href="awards.html">Awards</a></li>
         <li><a href="acknowledgments.html">Acknowledgments</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div class="cv-container">
+    <div class="cv-container fade-in">
       <h1>Curriculum Vitae</h1>
       <embed src="../files/cv.pdf" type="application/pdf" class="cv-embed" />
     </div>
@@ -50,6 +50,17 @@
       const menu = document.getElementById('nav-links');
       menu.classList.toggle('show');
     }
+
+    // Animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 </body>
 
