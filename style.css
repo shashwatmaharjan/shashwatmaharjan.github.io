@@ -263,3 +263,61 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ============================= */
+/*      VIDEO FAKE EMBED       */
+/* ============================= */
+
+/* ============================= */
+/*      VIDEO FAKE EMBED         */
+/* ============================= */
+
+/* Container */
+.video-fake-embed {
+  width: 260px;
+  margin: 0.5rem auto 0;
+}
+
+/* Make the link the positioning context */
+.video-fake-embed a {
+  position: relative;
+  display: block;
+}
+
+.video-fake-embed img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Play button box */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 14%;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  pointer-events: none; /* so clicks always activate the <a> */
+}
+
+/* Triangle inside the box */
+.play-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%); /* nudged right a bit */
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* Hover effect */
+.video-fake-embed a:hover .play-button {
+  background: #cc0000;
+  transform: translate(-50%, -50%) scale(1.05);
+}
