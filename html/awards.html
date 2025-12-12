@@ -5,107 +5,211 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Awards | Shashwat Maharjan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../css/awards.css" />
+  
+  <style>
+    /* Active Link Styling (Dark Gold) */
+    .header-nav a.active-link {
+      color: #b38600;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+      pointer-events: none;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-brand">Shashwat Maharjan</div>
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="conferences.html">Conferences</a></li>
-        <li><a href="awards.html" class="active">Awards</a></li>
-        <li><a href="acknowledgments.html">Acknowledgments</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <main>
-    <div class="awards-container">
-      <h1>Honors & Awards</h1>
-      <div class="awards-grid">
-        <div class="award-card">
-          <div class="award-year">2025</div>
-          <ul class="award-list">
-          <li>$1,250 grant by the Villanova University - Career Center to attend Computational Design Symposium for Additive Manufacturing (CDFAM).</li>
-          <li>Travel support for attending Finding Your Inner Modeler 2025 at UC Irvine.</li>
-          </ul>
+    <div class="paper fade-in">
+      
+      <header class="resume-header">
+        <div class="header-left">
+          <h1 class="name">Honors & Awards</h1>
+          <p class="role">Grants, Scholarships & Recognitions</p>
+
+          <div class="header-nav">
+            <a href="../index.html">Home</a>
+            <span class="dot">•</span>
+            <a href="research.html">Research</a>
+            <span class="dot">•</span>
+            <a href="portfolio.html">Portfolio</a>
+            <span class="dot">•</span>
+            <a href="publications.html">Publications</a>
+            <span class="dot">•</span>
+            <a href="#" class="active-link">Awards</a>
+          </div>
+
         </div>
-        <div class="award-card">
-          <div class="award-year">2024</div>
-          <ul class="award-list">
-          <li>Additional $55,000 grant by the U.S. Department of Energy for continuation of the geothermal research internship at Geologica Geothermal Group.</li>
-          </ul>
-        </div>
-        <div class="award-card">
-          <div class="award-year">2023</div>
-          <ul class="award-list">
-          <li>Received $55,000 grant from the U.S. Department of Energy for a geothermal research internship with Geologica Geothermal Group.</li>
-          </ul>
-        </div>
-        <div class="award-card">
-          <div class="award-year">2022</div>
-          <ul class="award-list">
-          <li>Exclusive Google Computer Science Research Mentorship Program.</li>
-          <li>Outstanding Undergraduate Student of the Year by the Engineering Society of Detroit.</li>
-          <li>Undergraduate President’s Award for research excellence at Central Michigan University.</li>
-          <li>Richtmeyer-Foust Award for outstanding Mathematics senior at Central Michigan University.</li>
-          <li>Most Enthusiastic Presenter at International Mechanical Engineering Congress & Exposition.</li>
-          <li>NSF Student Poster Competition Travel Grant for International Mechanical Engineering Congress & Exposition.</li>
-          </ul>
-        </div>
-        <div class="award-card">
-          <div class="award-year">2021</div>
-          <ul class="award-list">
-          <li>Best Undergraduate Poster at International Mechanical Engineering Congress & Exposition by the NSF.</li>
-          <li>Undergraduate Summer Scholars for ML research in structural health monitoring.</li>
-          </ul>
-        </div>
-        <div class="award-card">
-          <div class="award-year">2019</div>
-          <ul class="award-list">
-          <li>Runner Up, Integration Bee hosted by American Mathematical Society.</li>
-          </ul>
-        </div>
-        <div class="award-card">
-          <div class="award-year">2018</div>
-          <ul class="award-list">
-          <li>Winner, Integration Bee hosted by American Mathematical Society.</li>
-          <li>World Prestige Award [Full Ride] to attend Central Michigan University.</li>
-          </ul>
-        </div>
-      </div>
+      </header>
+
+      <hr class="divider">
+
+      <section class="resume-section">
+        <h2 class="section-title">Major Funding & Grants</h2>
+        <ul class="resume-list">
+          
+          <li>
+            <div class="award-header">
+              <strong>DOE/NSF INTERN Research Grant (Continuation)</strong>
+              <span class="amount-tag">$55,000 Funding</span>
+            </div>
+            <div class="award-sub">
+              2024 | <em>U.S. Dept. of Energy & NSF</em> - Competitive renewal for geothermal research internship.
+            </div>
+          </li>
+
+          <li>
+            <div class="award-header">
+              <strong>DOE/NSF INTERN Research Grant</strong>
+              <span class="amount-tag">$55,000 Funding</span>
+            </div>
+            <div class="award-sub">
+              2023 | <em>U.S. Dept. of Energy & NSF</em> - Competitive grant for industry research internship.
+            </div>
+          </li>
+          
+          <li>
+            <div class="award-header">
+              <strong>Career Center Grant</strong>
+              <span class="amount-tag">$1,250 Travel Grant</span>
+            </div>
+            <div class="award-sub">
+              2025 | <em>Villanova University</em> — Awarded to attend Computational Design Symposium for Additive Manufacturing (CDFAM).
+            </div>
+          </li>
+          
+           <li>
+            <div class="award-header">
+              <strong>World Prestige Award</strong>
+              <span class="amount-tag">$125,000 in Scholarships</span>
+            </div>
+            <div class="award-sub">
+              2018 – 2022 | <em>Central Michigan University</em> - Highest merit scholarship covering full tuition, living expenses, and books.
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">Academic & Professional Honors</h2>
+        <ul class="resume-list">
+
+          <li>
+            <div class="award-header">
+              <strong>Google Computer Science Research Mentorship</strong>
+            </div>
+            <div class="award-sub">
+              2022 | <em>Google Research</em> - Selected for exclusive mentorship program.
+            </div>
+          </li>
+
+          <li>
+            <div class="award-header">
+              <strong>Outstanding Undergraduate Student of the Year</strong>
+              <span class="amount-tag">$2,500 Funding</span>
+            </div>
+            <div class="award-sub">
+              2022 | <em>Engineering Society of Detroit (ESD)</em> - Top undergraduate engineering student in the region.
+            </div>
+          </li>
+
+          <li>
+            <div class="award-header">
+              <strong>President’s Award for Research Excellence</strong>
+              <span class="amount-tag">$500 Funding</span>
+            </div>
+            <div class="award-sub">
+              2022 | <em>Central Michigan University</em> - Awarded for significant contributions to undergraduate research.
+            </div>
+          </li>
+
+          <li>
+            <div class="award-header">
+              <strong>Richtmeyer-Foust Award</strong>
+            </div>
+            <div class="award-sub">
+              2022 | <em>Dept. of Mathematics, CMU</em> - Awarded to the outstanding senior in Mathematics.
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">Conference & Competition Awards</h2>
+        <ul class="resume-list">
+          
+          <li>
+            <div class="award-header">
+              <strong>Best Undergraduate Poster Award</strong>
+            </div>
+            <div class="award-sub">
+              2021 | <em>ASME IMECE (NSF Poster Competition)</em> - Awarded for research on structural defect identification.
+            </div>
+          </li>
+
+          <li>
+            <div class="award-header">
+              <strong>Most Enthusiastic Presenter</strong>
+            </div>
+            <div class="award-sub">
+              2022 | <em>ASME IMECE</em> - Recognized for presentation engagement and clarity.
+            </div>
+          </li>
+
+          <li>
+            <div class="award-header">
+              <strong>NSF Student Poster Travel Grant</strong>
+              <span class="amount-tag">$1,500 Funding</span>
+            </div>
+            <div class="award-sub">
+              2022 | <em>ASME IMECE</em> - Funding support to present research findings.
+            </div>
+          </li>
+
+          <li>
+            <div class="award-header">
+              <strong>Integration Bee</strong>
+              <span class="amount-tag uni">Winner</span>
+            </div>
+            <div class="award-sub">
+              2018 | <em>American Mathematical Society (Student Chapter)</em>
+            </div>
+          </li>
+          
+           <li>
+            <div class="award-header">
+              <strong>Integration Bee</strong>
+              <span class="amount-tag uni">Runner Up</span>
+            </div>
+            <div class="award-sub">
+              2019 | <em>American Mathematical Society (Student Chapter)</em>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <footer class="doc-footer">
+        Last updated: December 11, 2025
+      </footer>
+
     </div>
   </main>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('nav-links');
-      menu.classList.toggle('show');
-    }
-
-    // Fade-in on scroll animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
         }
       });
-    }, {
-      threshold: 0.1
-    });
-
-    document.querySelectorAll('.award-card').forEach(card => {
-      observer.observe(card);
-    });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 </body>
-
 </html>
