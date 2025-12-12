@@ -1,323 +1,391 @@
+/* ... Keep existing Root Variables and Body styles ... */
 :root {
+  --bg-color: #f4f4f4; 
+  --paper-color: #ffffff;
   --villanova-blue: rgb(0, 38, 100);
-  --font-primary: Arial, sans-serif;
+  --text-main: #222;
+  --text-light: #555;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Arial', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: var(--font-primary);
-  background-color: white;
-  color: #333;
-  font-size: 18px;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: var(--font-serif);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
   min-height: 100vh;
 }
 
-/* ============================= */
-/*        NAVIGATION BAR        */
-/* ============================= */
-
-header {
-  background-color: var(--villanova-blue);
+.paper {
+  background-color: var(--paper-color);
+  width: 100%;
+  max-width: 850px; 
+  padding: 4rem 4.5rem; 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-sizing: border-box;
 }
 
-.navbar {
+/* HEADER & NAV */
+.resume-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: var(--villanova-blue);
-  padding: 1rem 1.5rem;
-  color: white;
-  position: relative;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
 }
 
-.nav-brand {
-  font-weight: bold;
-  font-size: 1.2rem;
+.name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #000;
+  line-height: 1.1;
 }
 
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
+.role {
+  font-size: 1.1rem;
   margin: 0;
-  padding: 0;
+  font-style: italic;
+  color: var(--text-light);
 }
 
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.affiliation {
+  margin: 0 0 1.2rem 0;
+  color: var(--text-light);
   font-size: 1rem;
 }
 
-/* ============================= */
-/*        MAIN CONTENT          */
-/* ============================= */
-
-main {
-  padding: 3rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-nav {
+  margin: 1.2rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  max-width: 900px;
-  text-align: center;
-  width: 100%;
-}
-
-.quote-block {
-  width: 100%;
-  padding: 1rem 0.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.quote-content {
-  background-color: #f2f2f2; /* light gray background */
-  max-width: 700px;
-  width: 70%;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  position: relative;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #111;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* light shadow for subtle depth */
-}
-
-.quote-content p {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin: 1rem 0;
-}
-
-.quote-marks {
-  font-size: 3rem;
-  color: rgb(0, 38, 100); /* Villanova Blue */
-  font-weight: bold;
-}
-
-.top-mark {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-}
-
-.bottom-mark {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-}
-
-.quote-author {
-  margin-top: 1.5rem;
-  font-size: 0.95rem;
-  color: rgb(0, 38, 100);
-  font-weight: bold;
+.header-nav a {
+  text-decoration: none;
+  color: var(--villanova-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
   letter-spacing: 0.5px;
 }
 
-.top-section {
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.dot { margin: 0 6px; color: #ccc; }
+
+/* SOCIAL ICONS */
+.social-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.headshot img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.info-logo {
-  object-fit: contain;
-  max-height: 80px;
-  max-width: 260px;
-}
-
-.vu-logo {
-  max-height: 150px;
-  max-width: 250px;
-}
-
-.cmu-logo {
-  max-height: 65px;
-  max-width: 300px;
-}
-
-.name-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #111;
-  text-align: center;
+  gap: 1.2rem;
   margin-top: 1rem;
-  flex-basis: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
 }
 
-.strengths {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #222;
-  text-align: center;
-  margin-top: 0.5rem;
-  flex-basis: 100%;
+.social-row a {
+  color: var(--text-main);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
 }
 
-.strengths span {
-  margin: 0 0.6rem;
-  color: #aaa;
-}
-  
-.strengths {
-  color: rgb(0, 38, 100);
+.social-row a:hover { color: var(--villanova-blue); }
+
+/* CIRCULAR HEADSHOT */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%; /* This makes it a circle */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 3px solid white; /* Clean white ring */
 }
 
-.strengths span {
-  color: #555;
+/* SECTION STYLES */
+.divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin-bottom: 2.5rem;
 }
 
-.description {
+.resume-section { margin-bottom: 2.5rem; }
+
+.section-title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--villanova-blue);
+  letter-spacing: 1px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* EDUCATION STYLES */
+.entry {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.institution { font-weight: bold; display: block; }
+.degree { font-style: italic; display: block; color: #444; }
+.entry-aside { text-align: right; min-width: 120px; }
+.date, .location { 
+  display: block; 
+  font-family: var(--font-sans); 
+  font-size: 0.85rem; 
+  color: var(--text-light); 
+}
+
+/* PROJECT / PORTFOLIO STYLES */
+.project-item {
+  margin-bottom: 1.5rem;
+}
+
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap; /* Allows tags to wrap on small screens */
+  gap: 0.5rem;
+}
+
+.project-head strong {
   font-size: 1.1rem;
+  color: #222;
+}
+
+.tech-stack span {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  background-color: #f0f4f8; /* Light Blue Background */
+  color: var(--villanova-blue);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-left: 5px; /* Spacing between tags */
+  font-weight: 600;
+  border: 1px solid rgba(0, 38, 100, 0.1);
+}
+
+.project-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
   line-height: 1.6;
-  max-width: 700px;
-  padding: 0 1rem;
-  text-align: justify; /* Add this line */
+  text-align: justify;
 }
 
-/* ============================= */
-/*         RESPONSIVE           */
-/* ============================= */
+/* LISTS & LINKS */
+.resume-list { list-style: none; padding: 0; margin: 0; }
+.resume-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  border-left: 3px solid #f0f0f0;
+}
+.resume-list li:hover { border-left-color: var(--villanova-blue); }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
+.entry-link { text-align: right; margin-top: 0.8rem; }
+.entry-link a {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--villanova-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+.entry-link a:hover { text-decoration: underline; }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--villanova-blue);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 1rem 0;
-    z-index: 10;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 0.5rem 0;
-    text-align: center;
-  }
-
-  .top-section {
-    flex-direction: column;
-  }
-
-  .description {
-    padding: 0 1.5rem;
-  }
-
-  .vu-logo {
-    margin-bottom: -2.3rem;
-  }
-  
-  .strengths {
-    display: none;
-  }
+.doc-footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #bbb;
+  margin-top: 4rem;
+  font-family: var(--font-sans);
 }
 
-/* ============================= */
-/*        FADE-IN ANIMATION     */
-/* ============================= */
-
+/* FADE IN */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease;
 }
-
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* ============================= */
-/*      VIDEO FAKE EMBED       */
-/* ============================= */
-
-/* ============================= */
-/*      VIDEO FAKE EMBED         */
-/* ============================= */
-
-/* Container */
-.video-fake-embed {
-  width: 260px;
-  margin: 0.5rem auto 0;
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  body { background-color: white; }
+  main { padding: 0; display: block; }
+  .paper { padding: 1.5rem 1.2rem; box-shadow: none; }
+  
+  .resume-header {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  
+  .header-nav a {
+    background-color: #f4f6f8;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+  }
+  
+  .dot { display: none; } /* Hide dots on mobile */
+  
+  .social-row { justify-content: center; flex-wrap: wrap; }
+  .icon-text { display: none; } /* Show only icons on mobile to save space? Optional */
+  
+  .entry { flex-direction: column; }
+  .entry-aside { text-align: left; margin-top: 0.2rem; }
+  
+  .project-head { flex-direction: column; align-items: flex-start; }
+  .tech-stack { margin-top: 0.3rem; margin-bottom: 0.3rem; }
 }
 
-/* Make the link the positioning context */
-.video-fake-embed a {
-  position: relative;
-  display: block;
-}
-
-.video-fake-embed img {
-  display: block;
+/* Award Styling */
+.award-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   width: 100%;
-  height: auto;
 }
 
-/* Play button box */
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 68px;
-  height: 48px;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 14%;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  pointer-events: none; /* so clicks always activate the <a> */
+.award-sub {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4px;
+  line-height: 1.4;
+  display: block;
 }
 
-/* Triangle inside the box */
-.play-button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-35%, -50%); /* nudged right a bit */
-  border-style: solid;
-  border-width: 10px 0 10px 16px;
-  border-color: transparent transparent transparent #fff;
+/* 1. Money / Funding (Standard Blue - Existing) */
+.amount-tag {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: #eef4ff; /* Light Blue */
+  color: var(--villanova-blue);
+  padding: 3px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 38, 100, 0.15);
+  white-space: nowrap;
+  margin-left: 10px;
+  display: inline-block;
 }
 
-/* Hover effect */
-.video-fake-embed a:hover .play-button {
-  background: #cc0000;
-  transform: translate(-50%, -50%) scale(1.05);
+/* 2. Nationwide / Statewide Prestige (Gold - Existing) */
+.amount-tag.gold {
+  background-color: #fff9e6; /* Light Gold */
+  color: #b38600;            /* Dark Gold Text */
+  border-color: rgba(179, 134, 0, 0.2);
+}
+
+/* 3. University / Institutional Honor (Emerald/Teal - NEW) */
+.amount-tag.uni {
+  background-color: #e6fffa; /* Very Light Teal */
+  color: #006b5f;            /* Deep Teal/Emerald Text */
+  border-color: rgba(0, 107, 95, 0.2);
+}
+
+/* --- New Additions for Links & Video --- */
+
+/* The Action Bar at the bottom of the card */
+.card-links {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    gap: 10px;
+}
+
+.link-btn {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Specific Button Colors */
+.btn-video {
+    background-color: #ffebee; /* Light Red */
+    color: #c62828;
+}
+.btn-video:hover {
+    background-color: #ffcdd2;
+}
+
+.btn-paper {
+    background-color: #e3f2fd; /* Light Blue */
+    color: #1565c0;
+}
+.btn-paper:hover {
+    background-color: #bbdefb;
+}
+
+/* The "Play Button" Overlay Effect */
+/* If a card has the class "video-card", putting a play icon over the image */
+.project-card.video-card .card-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.project-card.video-card .card-image::after {
+    content: '\f144'; /* FontAwesome Play Icon code */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Let clicks pass through to the link */
+}
+
+.project-card.video-card:hover .card-image::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1); /* Pulse effect */
+}
+
+.header-nav a.active-link {
+      color: #b38600;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+      pointer-events: none;
 }
