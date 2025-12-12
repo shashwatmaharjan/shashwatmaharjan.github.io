@@ -4,72 +4,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shashwat Maharjan</title>
+  <title>Shashwat Maharjan - CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-brand"></div>
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="html/research.html">Research</a></li>
-        <li><a href="html/publications.html">Publications</a></li>
-        <li><a href="html/conferences.html">Conferences</a></li>
-        <li><a href="html/awards.html">Awards</a></li>
-        <li><a href="html/acknowledgments.html">Acknowledgments</a></li>
-        <li><a href="html/cv.html">CV</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <main>
-    <div class="content-wrapper fade-in">
+    <div class="paper fade-in">
       
-      <div class="quote-block fade-in">
-        <div class="quote-content">
-          <div class="quote-marks top-mark">“</div>
-          <p>
-            Our lives begin to end the day we become silent about things that matter.
+      <header class="resume-header">
+        <div class="header-left">
+          <h1 class="name">Shashwat Maharjan</h1>
+          <p class="role">PhD Candidate, Mechanical Engineering</p>
+          <p class="affiliation">Villanova University</p>
+          
+          <div class="header-nav">
+            <a href="html/research.html">Research</a>
+            <span class="dot">•</span>
+            <a href="html/publications.html">Publications</a>
+            <span class="dot">•</span>
+            <a href="html/conferences.html">Conferences</a>
+            <span class="dot">•</span>
+            <a href="html/awards.html">Awards</a>
+          </div>
+
+          <div class="social-row">
+            <a href="mailto:smahar02@villanova.edu" title="Email">
+              <i class="fas fa-envelope"></i> <span class="icon-text">Email</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=5LZLwC0AAAAJ&hl=en" target="_blank" title="Google Scholar">
+              <i class="fas fa-graduation-cap"></i> <span class="icon-text">Google Scholar</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shashwatmaharjan/" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i> <span class="icon-text">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <img src="images/headshot.jpg" alt="Shashwat Maharjan" class="profile-pic">
+        </div>
+      </header>
+
+      <hr class="divider">
+
+      <section class="resume-section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="entry">
+          <div class="entry-main">
+            <span class="institution">Villanova University</span>
+            <span class="degree">Ph.D. in Mechanical Engineering</span>
+          </div>
+          <div class="entry-aside">
+            <span class="date">Expected 2028</span>
+            <span class="location">Villanova, PA</span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-main">
+            <span class="institution">Central Michigan University</span>
+            <span class="degree">Master of Science in Mechanical Engineering</span>
+            <span class="degree">Bachelor of Science in Mechanical Engineering</span>
+          </div>
+          
+          <div class="entry-aside">
+            <span class="date">2024</span>
+            <span class="location">Mount Pleasant, MI</span>
+          </div>
+        </div>
+
+      <section class="resume-section">
+        <h2 class="section-title">Selected Projects</h2>
+        
+        <div class="project-item">
+          <div class="project-head">
+            <strong>Bio-Inspired Dental Composites Simulation</strong>
+            <div class="tech-stack">
+              <span>Abaqus</span> <span>Python</span> <span>MATLAB</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Designing functionally graded interfaces between ceramic and polymer layers to reduce interfacial stresses and enhance the durability of dental restorations, inspired by the natural dento-enamel junction between the enamel and dentin in human teeth.
           </p>
-          <div class="quote-marks bottom-mark">”</div>
-          <div class="quote-author">— Martin Luther King Jr.</div>
-        </div>
-      </div>
-
-      <div class="top-section fade-in">
-        <img src="images/vu_logo.jpg" alt="Villanova University Logo" class="info-logo vu-logo" />
-
-        <div class="headshot">
-          <img src="images/headshot.jpg" alt="Headshot" />
         </div>
 
-        <img src="images/cmu_logo.png" alt="Central Michigan University Logo" class="info-logo cmu-logo" />
-      </div>
+        <div class="project-item">
+          <div class="project-head">
+            <strong>Developing a Stress Fracture Risk Prediction Tool</strong>
+            <div class="tech-stack">
+              <span>Abaqus</span> <span>ScanIP</span> <span>Matlab</span> <span>Python</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Developing an athlete-specific tibial stress fracture risk prediction pipeline that combines baseline CT-derived geometry, image-based finite element simulations, and a trained machine learning model to quickly estimate stress/strain at common fracture sites.
+          </p>
+        </div>
+        
+        <div class="entry-link">
+          <a href="html/research.html">View Detailed Portfolio →</a>
+        </div>
+      </section>
 
-      <div class="name-heading fade-in">Shashwat Maharjan</div>
+      <section class="resume-section">
+        <h2 class="section-title">Selected Publications</h2>
+        <ul class="resume-list">
+          <li>
+            Kim, B., <strong>Maharjan, S.</strong>, Pranto, F. M., Guidio, B., Schaal, C., & Jeong, C. (2024). 
+            "Convolutional neural network and level-set spectral element method for ultrasonic imaging of delamination cavities in an anisotropic composite structure." 
+            <em>Ultrasonics</em>.
+            <a href="https://linkinghub.elsevier.com/retrieve/pii/S0041624X24000167" target="_blank" class="pub-link">
+              <i class="fas fa-external-link-alt"></i> Paper
+            </a>
+          </li>
+          <li>
+            <strong>Maharjan, S.</strong>, Guidio, B., & Jeong, C. (2024).
+            "Convolutional neural network for identifying effective seismic force at a DRM layer for rapid reconstruction of SH ground motions." 
+            <em>Earthquake Engineering & Structural Dynamics</em>.
+            <a href="https://onlinelibrary.wiley.com/doi/10.1002/eqe.4049" target="_blank" class="pub-link">
+              <i class="fas fa-external-link-alt"></i> Paper
+            </a>
+          </li>
+          <li>
+            <strong>Maharjan, S.</strong>, Guidio, B., Fathi, A., & Jeong, C. (2022).
+            "Deep and Convolutional Neural Networks for Identifying Vertically Propagating Incoming Seismic Wave Motion into a Heterogeneous, Damped Soil Column."
+            <em>Soil Dynamics and Earthquake Engineering</em>.
+            <a href="https://www.sciencedirect.com/science/article/pii/S0267726122003566?via%3Dihub" target="_blank" class="pub-link">
+              <i class="fas fa-external-link-alt"></i> Paper
+            </a>
+          </li>
+        </ul>
+        <div class="entry-link">
+          <a href="html/publications.html">View All Publications →</a>
+        </div>
+      </section>
 
-      <div class="strengths fade-in">
-        Developer <span>|</span> Includer <span>|</span> Positivity <span>|</span> Harmony <span>|</span> Analytical
-      </div>
+      <section class="resume-section">
+        <h2 class="section-title">Selected Awards</h2>
+        <ul class="resume-list">
+          <li>
+            <div class="award-header">
+              <strong>DOE/NSF INTERN Funding</strong>
+              <span class="amount-tag">$110,000</span>
+            </div>
+            <div class="award-sub">
+              2023 | <em>U.S. Dept. of Energy & NSF</em> — Competitive grant for industry research internship at Geologica Geothermal Group.
+            </div>
+          </li><li>
+            <div class="award-header">
+              <strong>Outstanding Undergraduate Student of the Year</strong>
+              <span class="amount-tag gold">Statewide Honor</span>
+            </div>
+            <div class="award-sub">
+              2022 | <em>Engineering Society of Detroit (ESD)</em> — Selected as the top undergraduate engineering student in the state of Michigan for academic excellence and professional service.
+            </div>
+          </li>
+        </ul>
+        <div class="entry-link">
+          <a href="html/awards.html">View All Awards →</a>
+        </div>
+      </section>
 
-      <div class="description fade-in">
-        <p>
-          Shashwat Maharjan is a PhD candidate in Mechanical Engineering at Villanova University, specializing in bioinspired material science and physics-informed machine learning. His research spans the development of bio-inspired dental composites, machine learning models for predicting stress fractures in athletes and military personnel, and the design of resilient metamaterials inspired by insect cuticles. With a strong foundation in finite element modeling and computational mechanics, he is focused on building intelligent tools for advanced material design.
-        </p>
-      </div>
+      <footer class="doc-footer">
+        Last updated: December 11, 2025
+      </footer>
+
     </div>
   </main>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('nav-links');
-      menu.classList.toggle('show');
-    }
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -77,9 +183,7 @@
         }
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 </body>
-
 </html>
