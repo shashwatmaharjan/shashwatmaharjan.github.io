@@ -1,255 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shashwat Maharjan</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Shashwat Maharjan | PhD Candidate</title>
   <link rel="stylesheet" href="style.css" />
-  
-  <style>
-    .experience-item {
-        margin-bottom: 2rem;
-    }
-    .job-details {
-        margin-top: 0.5rem;
-        padding-left: 1.2rem;
-        font-size: 0.95rem;
-        color: #444;
-        line-height: 1.6;
-    }
-    .job-details li {
-        margin-bottom: 0.4rem;
-    }
-    .job-details strong {
-        color: #000; /* Makes key metrics stand out */
-        font-weight: 600;
-    }
-  </style>
 </head>
 
 <body>
+  <!-- Mobile menu toggle -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-  <main>
-    <div class="paper fade-in">
-      
-      <header class="resume-header">
-        <div class="header-left">
-          <h1 class="name">Shashwat Maharjan</h1>
-          <p class="role">PhD Candidate, Mechanical Engineering</p>
-          <p class="affiliation">Villanova University</p>
-          
-          <div class="header-nav">
-            <a href="html/research.html">Research</a>
-            <span class="dot">•</span>
-            <!-- <a href="html/portfolio.html">Portfolio</a>
-            <span class="dot">•</span> -->
-            <a href="html/publications.html">Publications</a>
-            <span class="dot">•</span>
-            <a href="html/awards.html">Awards</a>
-          </div>
+  <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>`
+  </label>
 
-          <div class="social-row">
-            <a href="mailto:smahar02@villanova.edu" title="Email">
-              <i class="fas fa-envelope"></i> <span class="icon-text">Email</span>
-            </a>
-            <a href="https://scholar.google.com/citations?user=5LZLwC0AAAAJ&hl=en" target="_blank" title="Google Scholar">
-              <i class="fas fa-graduation-cap"></i> <span class="icon-text">Google Scholar</span>
-            </a>
-            <a href="https://www.linkedin.com/in/shashwatmaharjan/" target="_blank" title="LinkedIn">
-              <i class="fab fa-linkedin"></i> <span class="icon-text">LinkedIn</span>
-            </a>
-            <a href="files/cv.pdf" target="_blank" title="Download CV" class="cv-download">
-              <i class="fas fa-file-pdf"></i> <span class="icon-text">CV</span>
-            </a>
-          </div>
-        </div>
+  <div class="site-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <section class="profile">
+          <img src="images/headshot.jpg" alt="Headshot" class="headshot" />
+          <h1>Shashwat Maharjan</h1>
+          <p>PhD Candidate at Villanova</p>
+        </section>
 
-        <div class="header-right">
-          <img src="images/headshot.jpg" alt="Shashwat Maharjan" class="profile-pic">
-        </div>
-      </header>
+        <nav class="menu" aria-label="Main navigation">
+          <header class="major">
+            <h2>Menu</h2>
+          </header>
 
-      <hr class="divider">
-
-      <section class="resume-section">
-        <h2 class="section-title">Education</h2>
-        
-        <div class="entry">
-          <div class="entry-main">
-            <span class="institution">Villanova University</span>
-            <span class="degree">Ph.D. in Mechanical Engineering</span>
-          </div>
-          <div class="entry-aside">
-            <span class="date">Expected 2028</span>
-            <span class="location">Villanova, PA</span>
-          </div>
-        </div>
-
-        <div class="entry">
-          <div class="entry-main">
-            <span class="institution">Central Michigan University</span>
-            <span class="degree">Master of Science in Mechanical Engineering</span>
-            <span class="degree">Bachelor of Science in Mechanical Engineering</span>
-          </div>
-          
-          <div class="entry-aside">
-            <span class="date">2024</span>
-            <span class="location">Mount Pleasant, MI</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="resume-section">
-        <h2 class="section-title">Experience</h2>
-        
-        <div class="experience-item">
-          <div class="entry">
-            <div class="entry-main">
-              <span class="institution">Geologica Geothermal Group</span>
-              <span class="degree">Research Intern</span>
-            </div>
-            <div class="entry-aside">
-              <span class="date">May 2023 – April 2024</span>
-              <span class="location">San Diego, CA</span>
-            </div>
-          </div>
-          <ul class="job-details">
-            <li>Optimized Volsung automation with <strong>Python</strong>, reducing processing time by <strong>70%</strong> and enabling faster decision-making for geothermal field assessments.</li>
-            <li>Built <strong>TensorFlow ML models</strong> for static formation temperature estimation, boosting accuracy by <strong>35%</strong> to improve drilling safety.</li>
-            <li>Modeled a generalized geothermal well to simulate subsurface heat transfer and fluid flow, creating a scalable framework for project evaluation.</li>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="files/CV - Shashwat Maharjan.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            <li><a href="html/research.html">Research</a></li>
+            <li><a href="html/publications.html">Publications</a></li>
+            <li><a href="html/news.html">News</a></li>
+            <li><a href="html/awards.html">Awards</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="experience-item">
-          <div class="entry">
-            <div class="entry-main">
-              <span class="institution">Brown University</span>
-              <span class="degree">Neuroscience Research Intern</span>
-            </div>
-            <div class="entry-aside">
-              <span class="date">May 2022 – Aug 2022</span>
-              <span class="location">Providence, RI</span>
-            </div>
+        <footer class="sidebar-footer">
+          <p>&copy; Shashwat Maharjan. All rights reserved.</p>
+        </footer>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <div class="inner">
+        <header class="site-header">
+          <div class="profile-links">
+            <a href="mailto:smahar02@villanova.edu" target="_blank" rel="noopener noreferrer">
+              smahar02@villanova.edu
+            </a>
+            <span class="divider">|</span>
+            <a href="https://scholar.google.com/citations?user=5LZLwC0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+            <span class="divider">|</span>
+            <a href="https://www.linkedin.com/in/shashwatmaharjan/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
           </div>
-          <ul class="job-details">
-            <li>Automated data analysis by developing <strong>MATLAB and Python scripts</strong>, reducing manual processing time by <strong>80%</strong>.</li>
-            <li>Applied advanced signal processing on high-resolution sensor data, doubling data throughput and accuracy.</li>
-            <li>Achieved <strong>1ms verification accuracy</strong> for neurophysiological results, boosting experimental reliability by 25%.</li>
+        </header>
+
+        <!-- About Me -->
+        <section class="section">
+          <header class="major no-underline">
+            <h2>About Me</h2>
+          </header>
+
+          <p>
+            I am a PhD candidate in Mechanical Engineering at Villanova University, where my research combines biomechanics, finite element analysis, and machine learning to better understand and prevent musculoskeletal stress fractures.
+          </p>
+
+          <p>
+            My background spans computational modeling, structural health monitoring, geothermal energy research, and biomedical data analysis. Before joining Villanova, I earned my Master’s and Bachelor’s degrees in Mechanical Engineering from Central Michigan University. I am especially interested in developing data-driven and physics-based tools that improve prediction, reduce experimentation time, and support innovations in injury prevention, healthcare, and bio-inspired material design.
+          </p>
+        </section>
+
+        <!-- Selected Publications -->
+        <section class="section">
+          <header class="major no-underline">
+            <h2>Selected Publications</h2>
+          </header>
+
+          <ul class="publication-list">
+
+            <li>
+              <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/eqe.4049" target="_blank" rel="noopener noreferrer">
+                Convolutional neural network for identifying effective seismic force at a DRM layer for rapid reconstruction of SH ground motions
+              </a>
+              <br />
+              <span class="author-highlight">Shashwat Maharjan</span>, Bruno Guidio, and Chanseok Jeong.
+              <em>Earthquake Engineering & Structural Dynamics</em>, 2024.
+            </li>
+
+            <li>
+              <a href="https://ascelibrary.org/doi/abs/10.1061/JENMDT.EMENG-6840" target="_blank" rel="noopener noreferrer">
+                Level-set and learn: convolutional neural network for classification of elements to identify an arbitrary number of voids in a 2D solid using elastic waves
+              </a>
+              <br />
+              Fazle Mahdi Pranto, <span class="author-highlight">Shashwat Maharjan</span>, and Chanseok Jeong.
+              <em>Journal of Engineering Mechanics</em>, 2023.
+            </li>
+
+            <li>
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0267726122003566" target="_blank" rel="noopener noreferrer">
+                Deep and Convolutional Neural Networks for identifying vertically-propagating incoming seismic wave motion into a heterogeneous, damped soil column
+              </a>
+              <br />
+              <span class="author-highlight">Shashwat Maharjan</span>, Bruno Guidio, Arash Fathi, and Chanseok Jeong.
+              <em>Soil Dynamics and Earthquake Engineering</em>, 2022.
+            </li>
+            
           </ul>
-        </div>
-      </section>
 
-      <section class="resume-section">
-        <h2 class="section-title">Selected Research</h2>
-        
-        <div class="project-item">
-          <div class="project-head">
-            <strong>Bio-Inspired Dental Composites Simulation</strong>
-            <div class="tech-stack">
-              <span>Abaqus</span> <span>Python</span> <span>MATLAB</span>
-            </div>
+          <div class="section-action">
+            <a href="publications.html" class="button">See More --></a>
           </div>
-          <p class="project-desc">
-            Designing functionally graded interfaces between ceramic and polymer layers to reduce interfacial stresses and enhance the durability of dental restorations, inspired by the natural dento-enamel junction between the enamel and dentin in human teeth.
-          </p>
-        </div>
+        </section>
 
-        <div class="project-item">
-          <div class="project-head">
-            <strong>Developing a Stress Fracture Risk Prediction Tool</strong>
-            <div class="tech-stack">
-              <span>Abaqus</span> <span>ScanIP</span> <span>ImageJ</span>
-            </div>
+        <!-- Selected News -->
+        <section class="section">
+          <header class="major no-underline">
+            <h2>News</h2>
+          </header>
+
+          <div class="news-list">
+            <article class="news-item">
+              <time datetime="2026-04-15">April 15, 2026</time>
+              <h3>Conference Presentation</h3>
+              <p>
+                I presented new work on [topic] at [Conference Name].
+              </p>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2026-03-02">March 2, 2026</time>
+              <h3>New Publication</h3>
+              <p>
+                My article on [topic] was published in
+                <em>[Journal Name]</em>.
+              </p>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2026-01-20">January 20, 2026</time>
+              <h3>Award Announcement</h3>
+              <p>
+                I received [Award Name] in support of my dissertation research.
+              </p>
+            </article>
           </div>
-          <p class="project-desc">
-            Developing an athlete-specific tibial stress fracture risk prediction pipeline that combines baseline CT-derived geometry, image-based finite element simulations, and a trained machine learning model to quickly estimate stress/strain at common fracture sites.
-          </p>
-        </div>
-        
-        <div class="entry-link">
-          <a href="html/research.html">View All Research →</a>
-        </div>
-      </section>
 
-      <section class="resume-section">
-        <h2 class="section-title">Selected Publications</h2>
-        <ul class="resume-list">
-          <li>
-            Kim, B., <strong>Maharjan, S.</strong>, Guidio, B., Thomas, J., Pranto, F. M., Schaal, C., & Jeong, C. (2026).
-            "Elastodynamic imaging of voids in a PML-truncated layered solid using a deep convolutional neural network."  
-            <em>Engineering Geology</em>.
-            <a href="https://doi.org/10.1016/j.enggeo.2026.108545" target="_blank" class="pub-link">
-              <i class="fas fa-external-link-alt"></i> Paper
-            </a>
-          </li>
-          <li>
-            <strong>Maharjan, S.</strong>, Guidio, B., & Jeong, C. (2024).
-            "Convolutional neural network for identifying effective seismic force at a DRM layer for rapid reconstruction of SH ground motions." 
-            <em>Earthquake Engineering & Structural Dynamics</em>.
-            <a href="https://onlinelibrary.wiley.com/doi/10.1002/eqe.4049" target="_blank" class="pub-link">
-              <i class="fas fa-external-link-alt"></i> Paper
-            </a>
-          </li>
-          <li>
-            <strong>Maharjan, S.</strong>, Guidio, B., Fathi, A., & Jeong, C. (2022).
-            "Deep and Convolutional Neural Networks for Identifying Vertically Propagating Incoming Seismic Wave Motion into a Heterogeneous, Damped Soil Column."
-            <em>Soil Dynamics and Earthquake Engineering</em>.
-            <a href="https://www.sciencedirect.com/science/article/pii/S0267726122003566?via%3Dihub" target="_blank" class="pub-link">
-              <i class="fas fa-external-link-alt"></i> Paper
-            </a>
-          </li>
-        </ul>
-        <div class="entry-link">
-          <a href="html/publications.html">View All Publications →</a>
-        </div>
-      </section>
-
-      <section class="resume-section">
-        <h2 class="section-title">Selected Awards</h2>
-        <ul class="resume-list">
-          <li>
-            <div class="award-header">
-              <strong>DOE/NSF INTERN Research Grant</strong>
-              <span class="amount-tag">$110,000 Funding</span>
-            </div>
-            <div class="award-sub">
-              2023 – 2024 | <em>U.S. Dept. of Energy & NSF</em><br>
-              Two consecutive competitive grants ($55k each) for industry research internships at Geologica Geothermal Group.
-            </div>
-          </li>
-          <li>
-            <div class="award-header">
-              <strong>Outstanding Undergraduate Student of the Year</strong>
-              <span class="amount-tag">$2,500 Funding</span>
-            </div>
-            <div class="award-sub">
-              2022 | <em>Engineering Society of Detroit (ESD)</em> — Selected as the top undergraduate engineering student in the state of Michigan for academic excellence and professional service.
-            </div>
-          </li>
-        </ul>
-        <div class="entry-link">
-          <a href="html/awards.html">View All Awards →</a>
-        </div>
-      </section>
-
-      <footer class="doc-footer">
-        &copy; 2025 Shashwat Maharjan
-      </footer>
-
-    </div>
-  </main>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+          <div class="section-action">
+            <a href="html/news.html" class="button">See More --></a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
