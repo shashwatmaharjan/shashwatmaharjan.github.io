@@ -816,3 +816,99 @@ pre.pub-reveal {
     margin-top: 4px;
   }
 }
+
+/* Research blog-style pages */
+
+.back-links {
+  margin-bottom: 24px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.back-links a {
+  color: #b6463c;
+}
+
+.back-links a:hover {
+  color: #8f332b;
+  text-decoration: none;
+}
+
+.research-post {
+  max-width: 900px;
+}
+
+.research-post-header {
+  padding-bottom: 28px;
+  margin-bottom: 34px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.research-post-header h1 {
+  color: #222;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.12;
+  margin-bottom: 14px;
+}
+
+.research-post-subtitle {
+  max-width: 760px;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.post-section {
+  margin-bottom: 34px;
+}
+
+.post-section h2 {
+  color: #222;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.post-section p {
+  max-width: 780px;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.research-figure {
+  margin: 28px 0 36px;
+  max-width: 860px;
+}
+
+.research-figure img {
+  width: 100%;
+  border: 1px solid #dddddd;
+  background: #f7f7f7;
+}
+
+.research-figure.small {
+  max-width: 720px;
+}
+
+.research-figure figcaption {
+  margin-top: 8px;
+  color: #777;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .research-post-header {
+    margin-bottom: 28px;
+  }
+
+  .research-post-header h1 {
+    font-size: 2rem;
+  }
+
+  .research-figure {
+    margin: 22px 0 30px;
+  }
+}
