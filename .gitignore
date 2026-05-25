@@ -4,3 +4,6 @@
 # Folders
 /notes
 /.vscode
+
+# Affinity files
+*.af~lock~
