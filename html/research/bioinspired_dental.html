@@ -62,25 +62,25 @@
           <figure class="research-figure">
             <img src="../../images/research_schematic/bioinspired_dental.png" alt="Dental composite interface model" />
             <figcaption>
-                Schematic showing the concept of bio-inspired functionally graded materials in dental composites. By mimicking the natural structure of the DEJ, we can potentially improve the performance of composite fillings by providing a gradual transition in mechanical properties that helps to distribute stress and prevent fractures.
+                Schematic showing the structure of a dental composite filling, the DEJ gradients from the nanoindentation mapping tests, and the FGM implementation in the finite element model.
             </figcaption>
           </figure>
 
           <section class="post-section">
             <p>
-              On average, adults develop three to four cavities throughout their lifetime, with some individuals experiencing more than ten cavities [1]. A common restoration technique is to use fillings to replace a small portion of the tooth structure. Two common filling approaches include amalgam fillings and composite fillings. Amalgam fillings consist of a mixture of metals, including mercury, silver, tin, and copper [2]. They are known for their durability and strength. Composite fillings, on the other hand, are made of a resin-based material that can be color-matched to the natural tooth.
+              On average, adults develop three to four cavities throughout their lifetime, with some individuals experiencing more than ten cavities [2]. A common restoration technique is to use fillings to replace a small portion of the tooth structure. Two common filling approaches include amalgam fillings and composite fillings. Amalgam fillings consist of a mixture of metals, including mercury, silver, tin, and copper [3]. They are known for their durability and strength. Composite fillings, on the other hand, are made of a resin-based material that can be color-matched to the natural tooth.
             </p>
 
             <p>
-                The Minamata Convention, an international treaty signed in 2013, aims to reduce the use of mercury due to its harmful effects on human health and the environment. As a result, there has been a shift towards using composite fillings instead of amalgam fillings. However, composite fillings have a higher failure rate compared to amalgam fillings, with studies showing that they are more likely to fracture or wear down over time [3]. This has led to a need for improved composite fillings that can provide better durability and longevity.
+                The Minamata Convention, an international treaty signed in 2013, aims to reduce the use of mercury due to its harmful effects on human health and the environment. As a result, there has been a shift towards using composite fillings instead of amalgam fillings. However, composite fillings have a higher failure rate compared to amalgam fillings, with studies showing that they are more likely to fracture or wear down over time [4]. This has led to a need for improved composite fillings that can provide better durability and longevity.
             </p>
 
             <p>
-                By mimicking the natural structure of teeth, in particular, the dentino-enamel junction (DEJ), which is a natural FGM, we can potentially improve the performance of composite fillings. The DEJ is a thin layer that connects the hard enamel to the softer dentin, providing a gradual transition in mechanical properties that helps to distribute stress and prevent fractures [4]. By designing composite fillings with a similar graded structure, we can potentially enhance their durability and reduce the likelihood of failure.
+                By mimicking the natural structure of teeth, in particular, the dentino-enamel junction (DEJ), we can potentially improve the performance of composite fillings. The DEJ is a transition interface between the enamel and dentin layers of a tooth, characterized by a gradual transition in material properties [5]. This gradation in properties helps to distribute stresses more evenly across the tooth structure, reducing the likelihood of failure.
             </p>
 
             <p>
-                To mimic the DEJ, this research performs a finite element study in Abaqus to investigate the effect of different gradation profiles on the stress distribution and failure behavior of composite fillings. The study considers various gradation profiles, such as linear, exponential, sigmoidal, parabolic, and logarithmic, to determine which profile provides the best performance in terms of reducing stress concentrations and improving durability. The results of this study can provide insights into the design of bio-inspired composite fillings that can better withstand the mechanical stresses experienced in the oral environment.
+                To mimic the DEJ, this research develops a finite element model to study the behavior of functionally graded materials (FGMs) in Abaqus to investigate the effect of different gradation profiles on the stress distribution and failure behavior of composite fillings. The study considers various gradation profiles, such as linear, exponential, sigmoidal, parabolic, and logarithmic, to determine which profile provides the best performance in terms of reducing stress concentrations and improving durability. The results of this study can provide insights into the design of bio-inspired composite fillings that can better withstand the mechanical stresses experienced in the oral environment.
             </p>
 
             <p>
@@ -92,6 +92,7 @@
           <section class="post-section">
             <h2>References</h2>
             <ol>
+              <li><a href="https://www.sciencedirect.com/science/article/pii/S0109564117305584" target="_blank" rel="noopener noreferrer">https://www.sciencedirect.com/science/article/pii/S0109564117305584</a></li>
               <li><a href="https://www.advanceddentalgermantown.com/how-many-cavities-are-normal-for-every-age-group/" target="_blank" rel="noopener noreferrer">https://www.advanceddentalgermantown.com/how-many-cavities-are-normal-for-every-age-group/</a></li>
               <li><a href="https://www.fda.gov/medical-devices/dental-devices/dental-amalgam-fillings" target="_blank" rel="noopener noreferrer">https://www.fda.gov/medical-devices/dental-devices/dental-amalgam-fillings</a></li>
               <li><a href="https://minamataconvention.org/en/about" target="_blank" rel="noopener noreferrer">https://minamataconvention.org/en/about</a></li>
