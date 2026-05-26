@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stress Fracture Risk Prediction Tool | Shashwat Maharjan</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+  <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="site-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <section class="profile">
+          <img src="../../images/headshot.jpg" alt="Headshot" class="headshot" />
+          <h1>Shashwat Maharjan</h1>
+          <p>PhD Candidate at Villanova</p>
+        </section>
+
+        <nav class="menu" aria-label="Main navigation">
+          <header class="major">
+            <h2>Menu</h2>
+          </header>
+
+          <ul>
+            <li><a href="../../index.html" class="active">Home</a></li>
+            <li><a href="../../files/CV - Shashwat Maharjan.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../awards.html">Awards</a></li>
+          </ul>
+        </nav>
+
+        <footer class="sidebar-footer">
+          <p>&copy; Shashwat Maharjan. All rights reserved.</p>
+        </footer>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="inner">
+
+        <article class="research-post">
+          <nav class="back-links">
+            <a href="../research.html">← Back to Research</a>
+          </nav>
+
+          <header class="research-post-header">
+            <!-- <p class="research-category">Dental Materials</p> -->
+            <h1>Stress Fracture Risk Prediction Tool</h1>
+          </header>
+
+          <figure class="research-figure">
+            <img src="../../images/research_schematic/tibia_stress.png" alt="Tibia Stress" />
+            <figcaption>
+                This figure displays the meshed tibia model within Abaqus. Red dots indicate the locations of muscle attachments, while the green box highlights the area where fracture formation is expected.
+            </figcaption>
+          </figure>
+
+          <section class="post-section">
+            <p>
+                Stress fractures develop when microdamage accumulates faster than the bone's natural repair process can manage. Although these injuries are uncommon in the general population (occurring in less than 4% of people), they are frequently seen among athletes and military personnel [1, 2]. Specifically, stress fractures affect up to 64% of military recruits and 40% of athletes [3, 4]. Moreover, this risk appears disproportionately high in females, with reported instances being nearly double that of males [5]. This situation is particularly concerning because the risk increases even with relatively low levels of activity, such as running twice a week [5]. Consequently, developing a reliable tool to predict stress fracture risk is clearly necessary for public health.
+            </p>
+
+            <p>
+                The majority of these fractures occur in the lower extremities, accounting for about 80% of all cases [6]. Within the lower extremities, the tibia is the most common site, responsible for 50% of all such stress fractures [3]. Despite this high incidence rate, the precise mechanical causes of tibial stress fractures remain poorly understood.
+            </p>
+
+            <p>
+                Current studies generally attribute these fractures to several factors: bone structure, sex, previous injuries, and external forces like training demands and movement patterns [3, 7, 8, 9]. However, existing research tends to study these risk factors in isolation. Consequently, there is a significant gap in the literature regarding an integrated model that combines all these elements to predict overall stress fracture risk. Furthermore, much of the current research relies on retrospective analysis, which limits its ability to prevent fractures before they happen. Additionally, biomechanical considerations are often omitted from existing work.
+            </p>
+
+            <p>
+                To address these limitations, this research focuses on creating a comprehensive prediction tool for stress fractures. This tool will integrate multiple factors, including the specific anatomy of the tibia, biomechanics, and loading conditions associated with activities like walking or running. Specifically, geometrical features extracted from various tibial scans will feed into a machine learning model designed to forecast the risk level. Preliminary findings suggest that tibiae that are shorter and narrower may be more susceptible to fractures, aligning with existing literature regarding higher stress levels [8].
+            </p>
+
+            <p>
+                In summary, this study aims to build an integrated prediction tool by combining tibial anatomy, biomechanics, and activity-specific loading data. By achieving this integration, the research expects to provide a more complete picture of the risk factors for tibial stress fractures. Ultimately, this improved understanding should lead to better prevention strategies and improved health outcomes for both athletes and military personnel who are at risk.
+            </p>
+
+          </section>
+
+          <section class="post-section">
+            <h2>References</h2>
+            <ol>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/23825184/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/23825184/</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/16939407/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/16939407/</a></li>
+              <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9599044/" target="_blank" rel="noopener noreferrer">https://pmc.ncbi.nlm.nih.gov/articles/PMC9599044/</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/31213104/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/31213104/</a></li>
+              <li><a href="https://drum.lib.umd.edu/items/2bdf2f82-0496-49eb-8531-4aff976530f4" target="_blank" rel="noopener noreferrer">https://drum.lib.umd.edu/items/2bdf2f82-0496-49eb-8531-4aff976530f4</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/25848327/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/25848327/</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/25397605/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/25397605/</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/36811007/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/36811007/</a></li>
+              <li><a href="https://www.tandfonline.com/doi/abs/10.3810/psm.2014.11.2095" target="_blank" rel="noopener noreferrer">https://www.tandfonline.com/doi/abs/10.3810/psm.2014.11.2095</a></li>
+            </ol>
+          </section>
+        </article>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
